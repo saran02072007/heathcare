@@ -1,0 +1,16 @@
+{
+  "name": "online-mediconnect-medicare",
+  "version": "1.0.0",
+  "description": "Online MediConnect Medicare Healthcare Web Application",
+  "scripts": {
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "npx concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
